@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="navbar">
+        <h2 class="navbar_nome">Marcelo J Ferreira</h2>
+        <nav class="nav-links">
+            <a href="#hero">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Projetos</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Bem-vindo ao meu Portfólio</h1>
+        <p>Descubra meus projetos, habilidades e experiência profissional.</p>
+        <button class="hero-btn" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });">
+            Saiba Mais
+        </button>
+        <div class="redes-sociais" style="text-align: center; font-size: 24px;">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/marcelo-ferreiraa/" target="_blank" style="margin: 10px; color: #0a66c2;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/marcelojacferreira/" target="_blank" style="margin: 10px; color: #e4405f;">
+              <i class="fab fa-instagram"></i>
+            </a>
+          
+            <!-- GitHub -->
+            <a href="https://github.com/marcelojacint" target="_blank" style="margin: 10px; color: #333;">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          
+    </section>
+    
+
+    <section id="about">
+        <div class="about-content">
+            <div class="profile-img">
+                <img src="./img/marcelo.png" alt="Minha Foto">
+            </div>
+            <div>
+                <h2>Sobre Mim</h2>
+                <p class="p-sobre">Profissional em transição para a área de tecnologia, com foco em desenvolvimento de software. 
+                    Estou me aprofundando em Java e Spring Boot através de projetos práticos como a API Busca Cliente 
+                    e o Workshop SpringBoot JPA entre outros, disponíveis no meu GitHub. Nesses projetos, desenvolvi 
+                    habilidades em integração de APIs RESTful, manipulação de banco de dados com JPA/Hibernate, e 
+                    aplicação de conceitos de arquitetura em camadas. Minhas experiências anteriores como vendedor 
+                    externo e comprador varejista me proporcionaram forte capacidade de negociação, organização, e 
+                    comunicação, que aplico na minha jornada de programação. Estou sempre buscando aprender novas 
+                    tecnologias e aprimorar minhas habilidades, com o objetivo de me tornar um profissional flexível 
+                    e eficiente no desenvolvimento de soluções. Empenhado em me destacar na área de tecnologia, estou 
+                    focado em construir uma base sólida que una as hard skills adquiridas com minhas soft skills de 
+                    comunicação, resolução de problemas e empatia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill" data-summary="Java: Linguagem robusta e amplamente usada para aplicações empresariais.">
+                ☕ Java
+            </div>
+            <div class="skill" data-summary="HTML: A estrutura essencial para desenvolvimento de páginas web.">
+                🌐 HTML
+            </div>
+            <div class="skill" data-summary="CSS: Estilização e design de páginas web com layout e responsividade.">
+                🎨 CSS
+            </div>
+            <div class="skill" data-summary="Spring: Framework Java para desenvolvimento de aplicações robustas e escaláveis.">
+                🌱 Spring
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Meus Projetos</h2>
+        <div class="project-grid">
+            <div class="project-card" data-link="https://github.com/marcelojacint/demo-dao-jdbc">
+                <h3>Demo DAO JDBC</h3>
+                <p>Exemplo de projeto usando o padrão DAO e JDBC.</p>
+            </div>
+            <div class="project-card" data-link=https://github.com/marcelojacint/busca-cliente-API>
+                <h3>Busca-Cliente-API</h3>
+                <p>A Busca Cliente API é uma aplicação back-end construída com Spring Boot, projetada para gerenciar clientes 
+                    e realizar consultas de CEP utilizando a API do ViaCEP. O projeto é uma demonstração de práticas de 
+                    desenvolvimento de APIs RESTful em Java, utilizando uma arquitetura simples e eficiente..</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para exibir informações das habilidades -->
+    <div id="skill-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
